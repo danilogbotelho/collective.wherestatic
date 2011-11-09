@@ -43,4 +43,5 @@ setup(name='collective.wherestatic',
       install_requires=[
           'setuptools',
           'fanstatic',
+          'collective.monkeypatcher',
       ])

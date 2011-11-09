@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:monkey="http://namespaces.plone.org/monkey">
+    
+    <include package="collective.monkeypatcher" />
+
+    <monkey:patch
+	module="fanstatic.core"
+	original="NeededResources"
+	replacement="._fanstatic.CustomNeededResources"	
+    />
+
+</configure>
